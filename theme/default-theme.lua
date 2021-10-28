@@ -14,11 +14,11 @@ local tip = titlebar_icon_path
 local theme = {}
 
 -- Font
-theme.font = 'Ubuntu Regular 10'
-theme.font_bold = 'Ubuntu Bold 10'
+theme.font = 'Iosevka Medium 10'
+theme.font_bold = 'Iosevka Bold 10'
 
 -- Menu icon theme
-theme.icon_theme = 'Tela-blue-dark'
+theme.icon_theme = 'Fluent-dark'
 
 local awesome_overrides = function(theme)
 
@@ -29,7 +29,7 @@ local awesome_overrides = function(theme)
 	theme.wallpaper = theme.dir .. '/wallpapers/morning-wallpaper.jpg'
 
 	-- Default font
-	theme.font = 'Ubuntu Regular 10'
+	theme.font = 'Iosevka Medium 10'
 
 	-- Foreground
 	theme.fg_normal = '#ffffffde'
@@ -136,14 +136,14 @@ local awesome_overrides = function(theme)
 	theme.border_radius = dpi(0)
 
 	-- Decorations
-	theme.useless_gap = dpi(2)
+	theme.useless_gap = dpi(3)
 	theme.client_shape_rectangle = gears.shape.rectangle
 	theme.client_shape_rounded = function(cr, width, height)
 		gears.shape.rounded_rect(cr, width, height, dpi(0))
 	end
 
 	-- Menu
-	theme.menu_font = 'Inter Regular 11'
+	theme.menu_font = 'Iosevka Medium 11'
 	theme.menu_submenu = '' -- ➤
 
 	theme.menu_height = dpi(34)
@@ -152,8 +152,8 @@ local awesome_overrides = function(theme)
 	theme.menu_bg_focus = theme.accent .. 'CC'
 
 	theme.menu_bg_normal =  theme.background:sub(1,7) .. '33'
-	theme.menu_fg_normal = '#ffffff'
-	theme.menu_fg_focus = '#ffffff'
+	theme.menu_fg_normal = '#fbf1c7'
+	theme.menu_fg_focus = '#fbf1c7'
 	theme.menu_border_color = theme.background:sub(1,7) .. '5C'
 
 	-- Tooltips
@@ -167,7 +167,7 @@ local awesome_overrides = function(theme)
 	end
 
 	-- Separators
-	theme.separator_color = '#ffffff90'
+	theme.separator_color = '#fbf1c7'
 
 	-- Layoutbox icons
 	theme.layout_max = theme.icons .. 'layouts/max.svg'
@@ -176,20 +176,20 @@ local awesome_overrides = function(theme)
 	theme.layout_floating = theme.icons .. 'layouts/floating.svg'
 	
 	-- Taglist
-	theme.taglist_bg_empty = theme.background .. '99'
-	theme.taglist_bg_occupied =  '#252525'
-	theme.taglist_bg_urgent = '#E91E63' .. '99'
-	theme.taglist_bg_focus = '#000000'
+	theme.taglist_bg_empty = theme.background 
+	theme.taglist_bg_occupied =  '#3c3836'
+	theme.taglist_bg_urgent = '#b16286'
+	theme.taglist_bg_focus = '#3c3836'
 	theme.taglist_spacing = dpi(0)
 
 	-- Tasklist
-	theme.tasklist_font = 'UbuntuCondensed Regular 10'
+	theme.tasklist_font = 'Iosevka Regular 10'
 	theme.tasklist_bg_normal = theme.background .. '99'
 	theme.tasklist_bg_focus = theme.background
-	theme.tasklist_bg_urgent = '#E91E63' .. '99'
-	theme.tasklist_fg_focus = '#DDDDDD'
-	theme.tasklist_fg_urgent = '#ffffff'
-	theme.tasklist_fg_normal = '#AAAAAA'
+	theme.tasklist_bg_urgent = '#b16286' .. '99'
+	theme.tasklist_fg_focus = '#f9f5d7'
+	theme.tasklist_fg_urgent = '#fbf1c7'
+	theme.tasklist_fg_normal = '#ebdbb2'
 
 	-- Notification
 	theme.notification_position = 'top_right'
@@ -207,8 +207,8 @@ local awesome_overrides = function(theme)
 	theme.snap_border_width = dpi(15)
 
 	-- Hotkey popup
-	theme.hotkeys_font = 'Inter Bold'
-	theme.hotkeys_description_font   = 'Inter Regular Regular'
+	theme.hotkeys_font = 'Iosevka Bold'
+	theme.hotkeys_description_font   = 'Iosevka Regular'
 	theme.hotkeys_bg = theme.background
 	theme.hotkeys_group_margin = dpi(20)
 end

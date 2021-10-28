@@ -41,7 +41,7 @@ local bottom_panel = function(s)
 		return wibox.widget {
 			{
 				widget,
-				border_width = dpi(1),
+				border_width = dpi(2),
         		border_color = beautiful.groups_title_bg,
 				bg = beautiful.transparent,
 				shape = function(cr, w, h)
@@ -49,8 +49,8 @@ local bottom_panel = function(s)
 				end,
 				widget = wibox.container.background
 			},
-			top = dpi(3),
-			bottom = dpi(3),
+			top = dpi(2),
+			bottom = dpi(2),
 			widget = wibox.container.margin
 		}
 	end
@@ -63,7 +63,7 @@ local bottom_panel = function(s)
 			widget = wibox.widget.systray
 		},
 		visible = false,
-		top = dpi(10),
+		top = dpi(2),
 		widget = wibox.container.margin
 	}
 
@@ -88,7 +88,6 @@ local bottom_panel = function(s)
 				spacing = dpi(5),
 				s.search_apps,
 				s.control_center_toggle,
-				s.global_search,
 				build_widget(tag_list(s)),
 				build_widget(task_list(s)),
 				add_button
@@ -99,12 +98,10 @@ local bottom_panel = function(s)
 				spacing = dpi(5),
 				{
 					s.systray,
-					margins = dpi(5),
+					margins = dpi(7),
 					widget = wibox.container.margin
 				},
 				s.tray_toggler,
-				s.updater,
-				s.screen_rec,
 				s.network,
 				s.bluetooth,
 				s.battery,

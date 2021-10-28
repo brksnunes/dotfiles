@@ -4,39 +4,39 @@ local theme_dir = filesystem.get_configuration_dir() .. '/theme'
 local theme = {}
 
 theme.icons = theme_dir .. '/icons/'
-theme.font = 'Ubuntu Regular 10'
-theme.font_bold = 'Ubuntu Bold 10'
+theme.font = 'Iosevka Medium 10'
+theme.font_bold = 'Iosevka Bold 10'
 
 -- Colorscheme
-theme.system_black_dark = '#151515'
-theme.system_black_light = '#252525'
+theme.system_black_dark = '#131414'
+theme.system_black_light = '#3c3836'
 
-theme.system_red_dark = '#EE4F84'
-theme.system_red_light = '#F48FB1'
+theme.system_red_dark = '#cc241d'
+theme.system_red_light = '#fb4934'
 
-theme.system_green_dark = '#53E2AE'
-theme.system_green_light = '#A1EFD3'
+theme.system_green_dark = '#98971a'
+theme.system_green_light = '#b8bb26'
 
-theme.system_yellow_dark = '#F1FF52'
-theme.system_yellow_light = '#F1FA8C'
+theme.system_yellow_dark = '#d79921'
+theme.system_yellow_light = '#fabd2f'
 
-theme.system_blue_dark = '#6498EF'
-theme.system_blue_light = '#92B6F4'
+theme.system_blue_dark = '#458588'
+theme.system_blue_light = '#83a598'
 
-theme.system_magenta_dark = '#985EFF'
-theme.system_magenta_light = '#BD99FF'
+theme.system_magenta_dark = '#b16286'
+theme.system_magenta_light = '#d3869b'
 
-theme.system_cyan_dark = '#24D1E7'
-theme.system_cyan_light = '#87DFEB'
+theme.system_cyan_dark = '#689d6a'
+theme.system_cyan_light = '#8ec07c'
 
-theme.system_white_dark = '#E5E5E5'
-theme.system_white_light = '#F8F8F2'
+theme.system_white_dark = '#a89984'
+theme.system_white_light = '#ebdbb2'
 
 -- Accent color
 theme.accent = theme.system_blue_dark
 
 -- Background color
-theme.background = '#151515' .. '99'
+theme.background = '#131414'
 
 -- Transparent
 theme.transparent = '#00000000'
